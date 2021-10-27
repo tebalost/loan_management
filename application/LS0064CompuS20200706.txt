@@ -1,0 +1,15 @@
+                                             <?php
+                                                $year=date('Y');
+                                                $select = mysqli_query($link, "SELECT SUM(amount) FROM loan_info where status not in ('DECLINED','Pending')") or die (mysqli_error($link));
+                                                while ($row = mysqli_fetch_array($select)) {
+                                                    $select1 = mysqli_query($link, "SELECT * FROM systemset") or die (mysqli_error($link));
+                                                    while ($row1 = mysqli_fetch_array($select1)) {
+                                                        $currency = $row1['currency'];
+                                                        echo $currency . number_format($row['SUM(amount)'], 2, ".", ",") . "</b>";
+                                                    }
+                                                }
+                                                ?>
+                        
+                        <?php echo ($pread == 1) ? '<a href="listloans.php?tid=' . $_SESSION['tid'] . '&&mid=' . base64_encode("405") . '"> <i class="fa fa-fw fa-plus-circle"></i></a>' : ''; ?>
+                    
+                    </span>

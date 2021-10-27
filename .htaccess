@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME}%  !-d
+RewriteRule ^api/schedular/system-mailer$  ./application/reporting/controller/email-system-controller.php?action=$1 [NC,L]
+RewriteRule ^api/schedular/system-file-transfer$  ./application/reporting/controller/file-transfer-rest-controller.php [NC,L]
+RewriteRule ^api/schedular/sms-sender$ ./application/reporting/controller/sms-controller.php

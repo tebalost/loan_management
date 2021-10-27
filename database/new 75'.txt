@@ -1,0 +1,1 @@
+https://api.smsportal.com/api5/http5.aspx?Type=sendparam&username=serumula&password=5erumul@2020&num

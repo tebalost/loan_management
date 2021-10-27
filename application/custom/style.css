@@ -1,0 +1,16 @@
+@media print {
+    .noprint {
+        display: none;
+    }
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.fa {
+    color: #fff;
+}

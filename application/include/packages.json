@@ -1,0 +1,259 @@
+{
+  "owner": "SBS",
+  "name": "include",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "currentBalanceIndicator": {
+    "C": "Amount Settled in Full",
+    "D": "Account is in a Debit Status"
+  },
+  "incomeFrequencyCode": {
+    "M": "Monthly",
+    "W": "Weekly",
+    "F": "Fortnighty",
+    "Q": "Quarterly",
+    "A": "Annually"
+  },
+  "loanReasonCode": {
+    "C": "Crisis Loan: Other Emergency",
+    "D": "Crisis Loan: Death / Funeral",
+    "E": "Crisis Loan: Medical",
+    "G": "Crisis Loan: Income Loss",
+    "I": "Crisis Loan: Loss - Theft or Fire",
+    "H": "Home Loans: New property acquisition or upgrades to existing property",
+    "S": "Study Loan: Loan to fund formal studies at a recognised institution",
+    "F": "Financing of fixed or moveable asset other than property",
+    "R": "Consolidation Loan: A loan resulting from the Debt Consolidation",
+    "O": "Other: A loan other than the ones stipulated above",
+    "J": "Small Business: A loan to a sole proprietor"
+  },
+  "ownershipType": {
+    "00": "Other",
+    "01": "Sole Proprietor",
+    "02": "Joint Loan"
+  },
+  "paymentType": {
+    "00": "Default",
+    "01": "Payroll Deduction",
+    "02": "Deferred Payment",
+    "03": "Staff Account",
+    "04": "Under Administration",
+    "05": "Judgement Granted",
+    "06": "Debt Restructured",
+    "07": "Voluntary Debt Consolidation",
+    "08": "Debt Rescheduled",
+    "09": "Forced Reduction of Overdraft",
+    "10": "In-Excess",
+    "11": "Pending Registration"
+  },
+  "repaymentFrequencyCode": {
+    "01": "Weekly",
+    "02": "Fortnightly (Every 2 weeks)",
+    "03": "Monthly",
+    "04": "Quarterly",
+    "05": "Semi-annually",
+    "06": "Annually"
+  },
+  "statusCode": {
+	"": "Open and Active",
+	"DECLINED": "Decline",
+    "C": "Account Closed",
+    "D": "Disputed",
+    "E": "Terms Extended",
+    "F": "Lapsed Policy",
+    "G": "Cancelled by consumer",
+    "H": "Cancelled by supplier",
+    "I": "Facility Revoked",
+    "J": "Repossesion",
+    "K": "Paid put deceased claim",
+    "L": "Handed Over",
+    "M": "Paid out Disability",
+    "N": "Pending Registration Removal",
+    "P": "Paid Up",
+    "S": "Surrendered",
+    "T": "Early Settlement",
+    "V": "Cooling off Settlement",
+    "W": "Written Off",
+    "X": "Paid up default"
+  },
+  "accountType": {
+    "B": "Building Loan",
+    "C": "Credit Card",
+    "D": "Debit Recovery",
+    "E": "Single Credit Facility",
+    "F": "Open - Services",
+    "G": "Garage",
+    "H": "Home loan",
+    "I": "Instalment",
+    "L": "Life Insurance",
+    "M": "One Month Personal Loan",
+    "N": "Secured Pension / Policy Backed Lending",
+    "O": "Open - Limitless",
+    "P": "Personal loan",
+    "R": "Revolving Credit Store Cards",
+    "S": "Short Term Insurance",
+    "T": "Student Loan",
+    "U": "Utility",
+    "V": "Overdraft",
+    "W": "Rentals Asset",
+    "X": "Rentals Property",
+    "Y": "Vehicle Asset Finance",
+    "Z": "Revolving Non Store Card"
+  },
+  "accountStatusCodes": {
+    "C": "Account Closed",
+    "D": "Dispute",
+    "E": "Terms Extended",
+    "L": "Handed Over",
+    "P": "Paid Up",
+    "T": "Early Settlement",
+    "V": "Cooling Off Settlement",
+    "W": "Written Off",
+    "X": "Paid Up Default",
+    "Z": "Deceased"
+  },
+  "statusCodePerAccountType": [
+    {
+      "accountTypeCode": "P",
+      "accountType": "Personal Loan",
+      "statusCodes": [
+        {
+          "statusCode": "C",
+          "statusDescription": "Account Closed"
+        },
+        {
+          "statusCode": "D",
+          "statusDescription": "Dispute"
+        },
+        {
+          "statusCode": "E",
+          "statusDescription": "Terms Extended"
+        },
+        {
+          "statusCode": "H",
+          "statusDescription": "Handed Over"
+        },
+        {
+          "statusCode": "P",
+          "statusDescription": "Paid Up"
+        },
+        {
+          "statusCode": "T",
+          "statusDescription": "Early Settlement"
+        },
+        {
+          "statusCode": "V",
+          "statusDescription": "Cooling Off Settlement"
+        },
+        {
+          "statusCode": "W",
+          "statusDescription": "Written Off"
+        },
+        {
+          "statusCode": "X",
+          "statusDescription": "Paid up Default"
+        },
+        {
+          "statusCode": "Z",
+          "statusDescription": "Deceased"
+        }
+      ],
+      "reasonCodes": []
+    },
+    {
+      "accountTypeCode": "T",
+      "accountType": "Student Loan",
+      "statusCodes": [
+        {
+          "statusCode": "C",
+          "statusDescription": "Account Closed"
+        },
+        {
+          "statusCode": "D",
+          "statusDescription": "Dispute"
+        },
+        {
+          "statusCode": "E",
+          "statusDescription": "Terms Extended"
+        },
+        {
+          "statusCode": "H",
+          "statusDescription": "Handed Over"
+        },
+        {
+          "statusCode": "P",
+          "statusDescription": "Paid Up"
+        },
+        {
+          "statusCode": "T",
+          "statusDescription": "Early Settlement"
+        },
+        {
+          "statusCode": "V",
+          "statusDescription": "Cooling Off Settlement"
+        },
+        {
+          "statusCode": "W",
+          "statusDescription": "Written Off"
+        },
+        {
+          "statusCode": "X",
+          "statusDescription": "Paid up Default"
+        },
+        {
+          "statusCode": "Z",
+          "statusDescription": "Deceased"
+        }
+      ],
+      "reasonCodes": []
+    },
+    {
+      "accountTypeCode": "M",
+      "accountType": "One Month Personal Loan",
+      "statusCodes": [
+        {
+          "statusCode": "C",
+          "statusDescription": "Account Closed"
+        },
+        {
+          "statusCode": "D",
+          "statusDescription": "Dispute"
+        },
+        {
+          "statusCode": "E",
+          "statusDescription": "Terms Extended"
+        },
+        {
+          "statusCode": "H",
+          "statusDescription": "Handed Over"
+        },
+        {
+          "statusCode": "P",
+          "statusDescription": "Paid Up"
+        },
+        {
+          "statusCode": "T",
+          "statusDescription": "Early Settlement"
+        },
+        {
+          "statusCode": "V",
+          "statusDescription": "Cooling Off Settlement"
+        },
+        {
+          "statusCode": "W",
+          "statusDescription": "Written Off"
+        },
+        {
+          "statusCode": "X",
+          "statusDescription": "Paid up Default"
+        },
+        {
+          "statusCode": "Z",
+          "statusDescription": "Deceased"
+        }
+      ],
+      "reasonCodes": []
+    }
+  ]
+}
